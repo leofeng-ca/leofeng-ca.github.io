@@ -36,7 +36,7 @@
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="shortcut icon" href="/assets/img/deer.jpeg">
     
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="https://lfeng99.github.io/">
@@ -60,6 +60,15 @@
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
         <div class="container">
+          <!-- Social Icons -->
+          <div class="navbar-brand social">
+            <a href="https://scholar.google.com/citations?user=WsRunnEAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://www.semanticscholar.org/author/31787052" title="Semantic Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-semantic-scholar"></i></a>
+            <a href="https://www.linkedin.com/in/leofeng1999" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/lylbfeng" title="Twitter" rel="external nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+
+          </div>
           
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -184,7 +193,19 @@ News
         <div class="author">
         
 
-        <em>Leo Feng</em>, <a href="https://hossein-h.github.io/" rel="external nofollow noopener" target="_blank">Hossein Hajimirsadeghi</a>, <a href="https://yoshuabengio.org/" rel="external nofollow noopener" target="_blank">Yoshua Bengio</a>, and <a href="https://scholar.google.ca/citations?user=jyVyVj4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Mohamed Osama Ahmed</a>
+        <em>Leo Feng</em>, <a href="https://hossein-h.github.io/" rel="external nofollow noopener" target="_blank">Hossein Hajimirsadeghi</a>, <a href="https://yoshuabengio.org/" rel="external nofollow noopener" target="_blank">Yoshua Bengio</a>, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Mohamed Osama Ahmed' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -223,7 +244,20 @@ News
         <div class="author">
         
 
-        <em>Leo Feng</em>, <a href="https://scholar.google.ca/citations?user=jyVyVj4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Mohamed Osama Ahmed</a>, <a href="https://hossein-h.github.io/" rel="external nofollow noopener" target="_blank">Hossein Hajimirsadeghi</a>, and Amir H Abdi</div>
+        <em>Leo Feng</em>, <a href="https://scholar.google.ca/citations?user=jyVyVj4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Mohamed Osama Ahmed</a>, <a href="https://hossein-h.github.io/" rel="external nofollow noopener" target="_blank">Hossein Hajimirsadeghi</a>, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Amir H Abdi' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
 
         <!-- Journal/Book title and date -->
         
@@ -261,11 +295,11 @@ News
         <div class="author">
         
 
-        <a href="https://tristandeleu.github.io/" rel="external nofollow noopener" target="_blank">Tristan Deleu</a>, David Kanaa, <em>Leo Feng</em>, Giancarlo Kerg, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
+        <a href="https://tristandeleu.github.io/" rel="external nofollow noopener" target="_blank">Tristan Deleu</a>, David Kanaa, <em>Leo Feng</em>, and
+          <span class="more-authors" title="click to view 4 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Yoshua Bengio, Guillaume Lajoie, Pierre-Luc Bacon' : '3 more authors';
+                var more_authors_text = element.text() == '4 more authors' ? 'Giancarlo Kerg, Yoshua Bengio, Guillaume Lajoie, Pierre-Luc Bacon' : '4 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -273,7 +307,7 @@ News
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">3 more authors</span>
+              ">4 more authors</span>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -312,11 +346,11 @@ News
         <div class="author">
         
 
-        Luisa M Zintgraf, <em>Leo Feng</em>, Cong Lu, Maximilian Igl, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
+        <a href="https://luisazintgraf.com/" rel="external nofollow noopener" target="_blank">Luisa M Zintgraf</a>, <em>Leo Feng</em>, Cong Lu, and
+          <span class="more-authors" title="click to view 4 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Kristian Hartikainen, Katja Hofmann, Shimon Whiteson' : '3 more authors';
+                var more_authors_text = element.text() == '4 more authors' ? 'Maximilian Igl, Kristian Hartikainen, Katja Hofmann, Shimon Whiteson' : '4 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -324,7 +358,7 @@ News
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">3 more authors</span>
+              ">4 more authors</span>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -359,7 +393,6 @@ News
               <div class="contact-icons">
                 <a href="https://scholar.google.com/citations?user=WsRunnEAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
             <a href="https://www.semanticscholar.org/author/31787052" title="Semantic Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-semantic-scholar"></i></a>
-            <a href="https://github.com/lfeng99" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/leofeng1999" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://twitter.com/lylbfeng" title="Twitter" rel="external nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
             
