@@ -204,6 +204,51 @@ News
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#90323D"><a href="">ICML</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="feng2024memory" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Memory Efficient Neural Processes via Constant Memory Attention Block</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Leo Feng</em>, <a href="https://scholar.google.ca/citations?user=T4EeZ9gAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Frederick Tung</a>, <a href="https://hossein-h.github.io/" rel="external nofollow noopener" target="_blank">Hossein Hajimirsadeghi</a>, <a href="https://yoshuabengio.org/" rel="external nofollow noopener" target="_blank">Yoshua Bengio</a>, and <a href="https://scholar.google.ca/citations?user=jyVyVj4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Mohamed Osama Ahmed</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In International Conference on Machine Learning</em>, 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2305.14567" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="https://openreview.net/forum?id=xtwCf7iAs2" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Neural Processes (NPs) are popular meta-learning methods for efficiently modelling predictive uncertainty. Recent state-of-the-art methods, however, leverage expensive attention mechanisms, limiting their applications, particularly in low-resource settings. In this work, we propose Constant Memory Attentive Neural Processes (CMANPs), an NP variant that only requires \textbfconstant memory. To do so, we first propose an efficient update operation for Cross Attention. Leveraging the update operation, we propose Constant Memory Attention Block (CMAB), a novel attention block that (i) is permutation invariant, (ii) computes its output in constant memory, and (iii) performs constant computation updates. Finally, building on CMAB, we detail Constant Memory Attentive Neural Processes. Empirically, we show CMANPs achieve state-of-the-art results on popular NP benchmarks while being significantly more memory efficient than prior methods.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
         <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#E98A15"><a href="">ICLR</a></abbr></div>
 
         <!-- Entry bib key -->
@@ -243,51 +288,6 @@ News
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
             <p>Cross Attention is a popular method for retrieving information from a set of context tokens for making predictions. At inference time, for each prediction, Cross Attention scans the full set of tokens. In practice, however, often only a small subset of tokens are required for good performance. Methods such as Perceiver IO are cheap at inference as they distill the information to a smaller-sized set of latent tokens L &lt; N on which cross attention is then applied, resulting in only O(L) complexity. However, in practice, as the number of input tokens and the amount of information to distill increases, the number of latent tokens needed also increases significantly. In this work, we propose Tree Cross Attention (TCA) - a module based on Cross Attention that only retrieves information from a logarithmic O(\log(N)) number of tokens for performing inference. TCA organizes the data in a tree structure and performs a tree search at inference time to retrieve the relevant tokens for prediction. Leveraging TCA, we introduce ReTreever, a flexible architecture for token-efficient inference. We show empirically that Tree Cross Attention (TCA) performs comparable to Cross Attention across various classification and uncertainty regression tasks while being significantly more token-efficient. Furthermore, we compare ReTreever against Perceiver IO, showing significant gains while using the same number of tokens for inference.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#90323D"><a href="">ICML</a></abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="feng2024memory" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Memory Efficient Neural Processes via Constant Memory Attention Block</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <em>Leo Feng</em>, <a href="https://scholar.google.ca/citations?user=T4EeZ9gAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Frederick Tung</a>, <a href="https://hossein-h.github.io/" rel="external nofollow noopener" target="_blank">Hossein Hajimirsadeghi</a>, <a href="https://yoshuabengio.org/" rel="external nofollow noopener" target="_blank">Yoshua Bengio</a>, and <a href="https://scholar.google.ca/citations?user=jyVyVj4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Mohamed Osama Ahmed</a>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In International Conference on Machine Learning</em>, 2024
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2305.14567" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-            <a href="https://openreview.net/forum?id=xtwCf7iAs2" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Paper</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Neural Processes (NPs) are popular meta-learning methods for efficiently modelling predictive uncertainty. Recent state-of-the-art methods, however, leverage expensive attention mechanisms, limiting their applications, particularly in low-resource settings. In this work, we propose Constant Memory Attentive Neural Processes (CMANPs), an NP variant that only requires \textbfconstant memory. To do so, we first propose an efficient update operation for Cross Attention. Leveraging the update operation, we propose Constant Memory Attention Block (CMAB), a novel attention block that (i) is permutation invariant, (ii) computes its output in constant memory, and (iii) performs constant computation updates. Finally, building on CMAB, we detail Constant Memory Attentive Neural Processes. Empirically, we show CMANPs achieve state-of-the-art results on popular NP benchmarks while being significantly more memory efficient than prior methods.</p>
           </div>
         </div>
       </div>
