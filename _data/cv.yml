@@ -1,0 +1,117 @@
+# - title: General Information
+#   type: map
+#   contents:
+#     - name: Leo Feng
+#       value: Leo Feng
+#     # - name: Date of Birth
+#     #   value: 14th March 1879
+#     # - name: Languages
+#     #   value: English, German
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Computer Science
+      institution: Mila -- Université de Montréal
+      year: 2020 - Present
+      # description:
+      #   - Supervised by Prof. Yoshua Bengio
+    - title: B.A. in Computer Science
+      institution: University of Oxford
+      year: 2017 - 2020
+      # description:
+      #   - Supervised by Prof. Shimon Whiteson
+        # - title: Description 3.
+        #   contents:
+        #     - Sub-description 1.
+        #     - Sub-description 2.
+- title: Experience
+  type: time_table
+  contents:
+    - title: Research Intern
+      institution: Borealis AI
+      year: 2022 - Present
+      description:
+      # items:
+      #   - Supervised by Dr. Mohamed Osama Ahmed, Dr. Frederick Tung, and Dr. Hossein Hajimirsadeghi
+      #   - Previously supervised by: Dr. Amir Abdi
+    - title: Graduate Researcher
+      institution: Mila
+      year: 2020 - Present
+      description:
+      # items:
+    - title: Research Intern
+      institution: University of Oxford
+      year: 2019
+      # description:
+      #   - Supervised by Dr. Luisa Zintgraf
+    - title: Research Intern
+      institution: University of Kyoto
+      year: 2018-2019
+      # description:
+      #   - Supervised by Prof. Atsuko Sehara-Fujisawa
+    - title: Research Intern
+      institution: Brave Software
+      year: 2018
+      # description:
+      #   - Supervised by Panagiotis Tigas
+
+        # - title: Description 3.
+        #   contents:
+        #     - Sub-description 1.
+        #     - Sub-description 2.
+
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+
+- title: Selected Honors and Awards
+  type: time_table
+  contents:
+    - year: 2022
+      items: 
+        - FRQNT Doctoral (B2X) Scholarship ($100,000)
+        - ICML (Outstanding Reviewer (Top 10%), Session Chair Invitee)
+    - year: 2021
+      items: 
+        - Canada Graduate Scholarship (CGS-M) Scholarship ($17,500)
+    - year: 2020
+      items: 
+        - Molecule Discovery Fellowship ($12,500)
+        - UdeM FAS AI Scholarship ($6,500) 
+    - year: 2019
+      items: 
+        - Bronze Medal, North Western European Regionals ACM ICPC, Netherlands
+    - year: 2018
+      items: 
+        - Bronze Medal, North Western European Regionals ACM ICPC, UK
+    - year: 2017
+      items: 
+        - Bronze Medal, 29th International Olympiad of Informatics (IOI), Iran
+        - Gold Medal, Canadian Computing Olympiad
+    - year: 2015
+      items: 
+        - Summer Conference Invitee, 36th International Mathematics Tournament of Towns, Russia
+    - year: 2014
+      items: 
+        - Summer Conference Invitee, 35th International Mathematics Tournament of Towns, Russia
+
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items: 
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
+
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.

@@ -1,0 +1,29 @@
+# https://coolors.co/ - Colours Generator
+
+"AJP":
+  url: https://aapt.scitation.org/journal/ajp
+  color: "#00369f"
+
+"PhysRev":
+  url: https://journals.aps.org/
+
+"ICLR":
+  color: "#E98A15"
+
+"ICML":
+  color: "#90323D"
+
+"JMLR":
+  color: "#e91546"
+
+"Workshop":
+  color: "#67E0A3"
+
+"Spotlight":
+  color: "#6de915"
+
+"NeurIPS":
+  color: "#628395"
+
+"Preprint":
+  color: "#E5446D"

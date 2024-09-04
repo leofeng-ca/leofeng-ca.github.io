@@ -1,0 +1,144 @@
+---
+---
+
+@inproceedings{feng2024memory,
+  title={Memory Efficient Neural Processes via Constant Memory Attention Block}, 
+  author={Leo Feng and Frederick Tung and Hossein Hajimirsadeghi and Yoshua Bengio and Mohamed Osama Ahmed},
+  booktitle={International Conference on Machine Learning},
+  year={2024},
+  abbr={ICML},
+  arxiv={2305.14567},
+  paper={https://openreview.net/forum?id=xtwCf7iAs2},
+  archivePrefix={arXiv},
+  abstract={Neural Processes (NPs) are popular meta-learning methods for efficiently modelling predictive uncertainty. Recent state-of-the-art methods, however, leverage expensive attention mechanisms, limiting their applications, particularly in low-resource settings. In this work, we propose Constant Memory Attentive Neural Processes (CMANPs), an NP variant that only requires \textbf{constant} memory. To do so, we first propose an efficient update operation for Cross Attention. Leveraging the update operation, we propose Constant Memory Attention Block (CMAB), a novel attention block that (i) is permutation invariant, (ii) computes its output in constant memory, and (iii) performs constant computation updates. Finally, building on CMAB, we detail Constant Memory Attentive Neural Processes. Empirically, we show CMANPs achieve state-of-the-art results on popular NP benchmarks while being significantly more memory efficient than prior methods.},
+  selected={true}
+}
+
+@inproceedings{feng2024tree,
+  title={Tree Cross Attention}, 
+  author={Leo Feng and Frederick Tung and Hossein Hajimirsadeghi and Yoshua Bengio and Mohamed Osama Ahmed},
+  booktitle={International Conference on Learning Representations},
+  year={2024},
+  abbr={ICLR},
+  year={2024},
+  arxiv={2309.17388},
+  code={https://github.com/BorealisAI/tree-cross-attention},
+  paper={https://openreview.net/forum?id=Vw24wtSddM},
+  abstract={Cross Attention is a popular method for retrieving information from a set of context tokens for making predictions. At inference time, for each prediction, Cross Attention scans the full set of tokens. In practice, however, often only a small subset of tokens are required for good performance. Methods such as Perceiver IO are cheap at inference as they distill the information to a smaller-sized set of latent tokens $L < N$ on which cross attention is then applied, resulting in only $O(L)$ complexity. However, in practice, as the number of input tokens and the amount of information to distill increases, the number of latent tokens needed also increases significantly. In this work, we propose Tree Cross Attention (TCA) - a module based on Cross Attention that only retrieves information from a logarithmic $O(\log(N))$ number of tokens for performing inference. TCA organizes the data in a tree structure and performs a tree search at inference time to retrieve the relevant tokens for prediction. Leveraging TCA, we introduce ReTreever, a flexible architecture for token-efficient inference. We show empirically that Tree Cross Attention (TCA) performs comparable to Cross Attention across various classification and uncertainty regression tasks while being significantly more token-efficient. Furthermore, we compare ReTreever against Perceiver IO, showing significant gains while using the same number of tokens for inference.},
+  selected={true}
+}
+
+@inproceedings{feng2023constant,
+  title={Constant Memory Attention Block},
+  author={Leo Feng and Frederick Tung and Hossein Hajimirsadeghi and Yoshua Bengio and Mohamed Osama Ahmed},
+  booktitle={Efficient Systems for Foundation Models Workshop at the International Conference on Machine Learning (ICML)},
+  year={2023},
+  abbr={Workshop},
+  paper={https://openreview.net/forum?id=xd9MI1zb64},
+  arxiv={2306.12599},
+  abstract={Modern foundation model architectures rely on attention mechanisms to effectively capture context. However, these methods require linear or quadratic memory in terms of the number of inputs/datapoints, limiting their applicability in low-compute domains. In this work, we propose Constant Memory Attention Block (CMAB), a novel general-purpose attention block that computes its output in constant memory and performs updates in constant computation. Highlighting CMABs efficacy, we introduce methods for Neural Processes and Temporal Point Processes. Empirically, we show our proposed methods achieve results competitive with state-of-the-art while being significantly more memory efficient.}
+}
+
+@inproceedings{feng2022latent,
+  title={Latent Bottlenecked Attentive Neural Processes},
+  author={Feng, Leo and Hajimirsadeghi, Hossein and Bengio, Yoshua and Ahmed, Mohamed Osama},
+  booktitle={International Conference on Learning Representations},
+  year={2023},
+  abbr={ICLR},
+  arxiv={2211.08458},
+  code={https://github.com/BorealisAI/latent-bottlenecked-anp},
+  paper={https://openreview.net/forum?id=yIxtevizEA},
+  abstract={Neural Processes (NPs) are popular methods in meta-learning that can estimate predictive uncertainty on target datapoints by conditioning on a context dataset. Previous state-of-the-art method Transformer Neural Processes (TNPs) achieve strong performance but require quadratic computation with respect to the number of context datapoints, significantly limiting its scalability. Conversely, existing sub-quadratic NP variants perform significantly worse than that of TNPs. Tackling this issue, we propose Latent Bottlenecked Attentive Neural Processes (LBANPs), a new computationally efficient sub-quadratic NP variant, that has a querying computational complexity independent of the number of context datapoints. The model encodes the context dataset into a constant number of latent vectors on which self-attention is performed. When making predictions, the model retrieves higher-order information from the context dataset via multiple cross-attention mechanisms on the latent vectors. We empirically show that LBANPs achieve results competitive with the state-of-the-art on meta-regression, image completion, and contextual multi-armed bandits. We demonstrate that LBANPs can trade-off the computational cost and performance according to the number of latent vectors. Finally, we show LBANPs can scale beyond existing attention-based NP variants to larger dataset settings.},
+  selected={true}
+}
+
+
+@inproceedings{fengtowards,
+  title={Towards Better Selective Classification},
+  author={Feng, Leo and Ahmed, Mohamed Osama and Hajimirsadeghi, Hossein and Abdi, Amir H},
+  booktitle={International Conference on Learning Representations},
+  year={2023},
+  abbr={ICLR},
+  arxiv={2206.09034},
+  code={https://github.com/BorealisAI/towards-better-sel-cls},
+  paper={https://openreview.net/forum?id=5gDz_yTcst},
+  abstract={We tackle the problem of Selective Classification where the objective is to achieve the best performance on a predetermined ratio (coverage) of the dataset. Recent state-of-the-art selective methods come with architectural changes either via introducing a separate selection head or an extra abstention logit. In this paper, we challenge the aforementioned methods. The results suggest that the superior performance of state-of-the-art methods is owed to training a more generalizable classifier rather than their proposed selection mechanisms. We argue that the best performing selection mechanism should instead be rooted in the classifier itself. Our proposed selection strategy uses the classification scores and achieves better results by a significant margin, consistently, across all coverages and all datasets, without any added compute cost. Furthermore, inspired by semi-supervised learning, we propose an entropy-based regularizer that improves the performance of selective classification methods. Our proposed selection mechanism with the proposed entropy-based regularizer achieves new state-of-the-art results.},
+  selected={true}
+}
+
+@inproceedings{deleucontinuous,
+  title={Continuous-Time Meta-Learning with Forward Mode Differentiation},
+  author={Deleu, Tristan and Kanaa, David and Feng, Leo and Kerg, Giancarlo and Bengio, Yoshua and Lajoie, Guillaume and Bacon, Pierre-Luc},
+  booktitle={International Conference on Learning Representations},
+  year={2022},
+  abbr={ICLR},
+  arxiv={2203.01443},
+  code={https://github.com/tristandeleu/jax-comln},
+  paper={https://openreview.net/forum?id=57PipS27Km},
+  abstract={Drawing inspiration from gradient-based meta-learning methods with infinitely small gradient steps, we introduce Continuous-Time Meta-Learning (COMLN), a meta-learning algorithm where adaptation follows the dynamics of a gradient vector field. Specifically, representations of the inputs are meta-learned such that a task-specific linear classifier is obtained as a solution of an ordinary differential equation (ODE). Treating the learning process as an ODE offers the notable advantage that the length of the trajectory is now continuous, as opposed to a fixed and discrete number of gradient steps. As a consequence, we can optimize the amount of adaptation necessary to solve a new task using stochastic gradient descent, in addition to learning the initial conditions as is standard practice in gradient-based meta-learning. Importantly, in order to compute the exact meta-gradients required for the outer-loop updates, we  devise an efficient algorithm based on forward mode differentiation, whose memory requirements do not scale with the length of the learning trajectory, thus allowing longer adaptation in constant memory. We provide analytical guarantees for the stability of COMLN, we show empirically its efficiency in terms of runtime and memory usage, and we illustrate its effectiveness on a range of few-shot image classification problems.}
+}
+
+
+@article{zintgraf2021varibad,
+  title={VariBAD: variational Bayes-adaptive deep RL via meta-learning},
+  author={Zintgraf, Luisa and Schulze, Sebastian and Lu, Cong and Feng, Leo and Igl, Maximilian and Shiarlis, Kyriacos and Gal, Yarin and Hofmann, Katja and Whiteson, Shimon},
+  journal={The Journal of Machine Learning Research},
+  volume={22},
+  number={1},
+  pages={13198--13236},
+  year={2021},
+  abbr={JMLR},
+  paper={https://jmlr.org/papers/v22/21-0657.html},
+  abstract={Trading off exploration and exploitation in an unknown environment is key to maximising expected online return during learning. A Bayes-optimal policy, which does so optimally, conditions its actions not only on the environment state but also on the agent's uncertainty about the environment. Computing a Bayes-optimal policy is however intractable for all but the smallest tasks. In this paper, we introduce variational Bayes-Adaptive Deep RL (variBAD), a way to meta-learn approximately Bayes-optimal policies for complex tasks. VariBAD simultaneously meta-learns a variational auto-encoder to perform approximate inference, and a policy that incorporates task uncertainty directly during action selection by conditioning on both the environment state and the approximate belief. In two toy domains, we illustrate how variBAD performs structured online exploration as a function of task uncertainty. We further evaluate variBAD on MuJoCo tasks widely used in meta-RL and show that it achieves higher online return than existing methods. On the recently proposed Meta-World ML1 benchmark, variBAD achieves state of the art results by a large margin, fully solving two out of the three ML1 tasks for the first time.},
+  publisher={JMLRORG}
+}
+
+
+@inproceedings{zintgraf2021exploration,
+  title={Exploration in approximate hyper-state space for meta reinforcement learning},
+  author={Zintgraf, Luisa M and Feng, Leo and Lu, Cong and Igl, Maximilian and Hartikainen, Kristian and Hofmann, Katja and Whiteson, Shimon},
+  booktitle={International Conference on Machine Learning},
+  pages={12991--13001},
+  year={2021},
+  organization={PMLR},
+  abbr={ICML},
+  arxiv={2010.01062},
+  code={https://github.com/lmzintgraf/hyperx},
+  paper={https://proceedings.mlr.press/v139/zintgraf21a},
+  abstract={To rapidly learn a new task, it is often essential for agents to explore efficiently - especially when performance matters from the first timestep. One way to learn such behaviour is via meta-learning. Many existing methods however rely on dense rewards for meta-training, and can fail catastrophically if the rewards are sparse. Without a suitable reward signal, the need for exploration during meta-training is exacerbated. To address this, we propose HyperX, which uses novel reward bonuses for meta-training to explore in approximate hyper-state space (where hyper-states represent the environment state and the agent’s task belief). We show empirically that HyperX meta-learns better task-exploration and adapts more successfully to new tasks than existing methods.}
+}
+
+@article{feng2019viable,
+  title={VIABLE: Fast Adaptation via Backpropagating Learned Loss},
+  author={Feng, Leo and Zintgraf, Luisa and Peng, Bei and Whiteson, Shimon},
+  journal={NeurIPS Workshop on Meta-Learning},
+  abbr={Workshop},
+  arxiv={1911.13159},
+  year={2019}
+}
+
+@article{zintgraf2020exploration,
+  title={Exploration in approximate hyper-state space},
+  author={Zintgraf, Luisa M and Feng, Leo and Igl, Maximilian and Hartikainen, Kristian and Hofmann, Katja and Whiteson, Shimon},
+  journal={ICLR Workshop on Beyond “Tabula Rasa” in Reinforcement Learning},
+  abbr={Workshop},
+  year={2020}
+}
+
+@article{feng2023efficient,
+  title={Efficient Queries Transformer Neural Processes},
+  author={Feng, Leo and Hajimirsadeghi, Hossein and Bengio, Yoshua and Ahmed, Mohamed Osama},
+  journal={NeurIPS Workshop on Meta-Learning},
+  abbr={Workshop},
+  paper={https://openreview.net/forum?id=_3FyT_W1DW},
+  year={2023}
+}
+
+@article{feng2022designing,
+  title={Designing Biological Sequences via Meta-Reinforcement Learning and Bayesian Optimization},
+  author={Feng, Leo and Nouri, Padideh and Muni, Aneri and Bengio, Yoshua and Bacon, Pierre-Luc},
+  journal={NeurIPS Workshop on Machine Learning in Structural Biology},
+  abbr={Workshop},
+  arxiv={2209.06259},
+  year={2022}
+}
