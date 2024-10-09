@@ -198,9 +198,96 @@ News
           
 
           <!-- Selected papers -->
-          <h2><a href="/publications/" style="color: inherit;">Selected Publications</a></h2>
+          <h2><a href="/publications/" style="color: inherit;">Selected Works</a></h2>
           <div class="publications">
             <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#E5446D"><a href="">Preprint</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="feng2024were" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Were RNNs All We Needed?</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Leo Feng</em>, <a href="https://scholar.google.ca/citations?user=T4EeZ9gAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Frederick Tung</a>, <a href="https://scholar.google.ca/citations?user=jyVyVj4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Mohamed Osama Ahmed</a>, <a href="https://yoshuabengio.org/" rel="external nofollow noopener" target="_blank">Yoshua Bengio</a>, and <a href="https://hossein-h.github.io/" rel="external nofollow noopener" target="_blank">Hossein Hajimirsadeghi</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv</em>, 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2410.01201" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The scalability limitations of Transformers regarding sequence length have renewed interest in recurrent sequence models that are parallelizable during training. As a result, many novel recurrent architectures, such as S4, Mamba, and Aaren, have been proposed that achieve comparable performance. In this work, we revisit traditional recurrent neural networks (RNNs) from over a decade ago: LSTMs (1997) and GRUs (2014). While these models were slow due to requiring to backpropagate through time (BPTT), we show that by removing their hidden state dependencies from their input, forget, and update gates, LSTMs and GRUs no longer need to BPTT and can be efficiently trained in parallel. Building on this, we introduce minimal versions (minLSTMs and minGRUs) that (1) use significantly fewer parameters than their traditional counterparts and (2) are fully parallelizable during training (175x faster for a sequence of length 512). Lastly, we show that these stripped-down versions of decade-old RNNs match the empirical performance of recent sequence models.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#E5446D"><a href="">Preprint</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="feng2024attention" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Attention as an RNN</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Leo Feng</em>, <a href="https://scholar.google.ca/citations?user=T4EeZ9gAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Frederick Tung</a>, <a href="https://hossein-h.github.io/" rel="external nofollow noopener" target="_blank">Hossein Hajimirsadeghi</a>, <a href="https://scholar.google.ca/citations?user=jyVyVj4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Mohamed Osama Ahmed</a>, <a href="https://yoshuabengio.org/" rel="external nofollow noopener" target="_blank">Yoshua Bengio</a>, and Greg Mori</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv</em>, 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2405.13956" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The advent of Transformers marked a significant breakthrough in sequence modelling, providing a highly performant architecture capable of leveraging GPU parallelism. However, Transformers are computationally expensive at inference time, limiting their applications, particularly in low-resource settings (e.g., mobile and embedded devices). Addressing this, we (1) begin by showing that attention can be viewed as a special Recurrent Neural Network (RNN) with the ability to compute its \textitmany-to-one RNN output efficiently. We then (2) show that popular attention-based models such as Transformers can be viewed as RNN variants. However, unlike traditional RNNs (e.g., LSTMs), these models cannot be updated efficiently with new tokens, an important property in sequence modelling. Tackling this, we (3) introduce a new efficient method of computing attention’s \textitmany-to-many RNN output based on the parallel prefix scan algorithm. Building on the new attention formulation, we (4) introduce \textbfAaren, an attention-based module that can not only (i) be trained in parallel (like Transformers) but also (ii) be updated efficiently with new tokens, requiring only constant memory for inferences (like traditional RNNs). Empirically, we show Aarens achieve comparable performance to Transformers on  datasets spread across four popular sequential problem settings: reinforcement learning, event forecasting, time series classification, and time series forecasting tasks while being more time and memory-efficient.</p>
+          </div>
+        </div>
+      </div>
+</li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
@@ -399,7 +486,7 @@ News
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2024 Leo  Feng. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-Last updated: September 04, 2024.
+Last updated: October 09, 2024.
       </div>
     </footer>
 
