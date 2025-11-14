@@ -13,12 +13,11 @@
   contents:
     - title: Ph.D. in Computer Science
       institution: Mila -- Université de Montréal
-      year: 2020 - Present
+      year: 2020 - 2025
       # description:
       #   - Supervised by Prof. Yoshua Bengio
     - title: B.A. in Computer Science
       institution: University of Oxford
-      year: 2017 - 2020
       # description:
       #   - Supervised by Prof. Shimon Whiteson
         # - title: Description 3.
@@ -28,18 +27,17 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Research Intern
+    - title: Research Scientist
       institution: Borealis AI
-      year: 2022 - Present
+      year: 22025 - Present
+      description:
+    - title: Research Intern
+      institution: RBC Borealis (formerly Borealis AI)
+      year: 2022 - 2024
       description:
       # items:
       #   - Supervised by Dr. Mohamed Osama Ahmed, Dr. Frederick Tung, and Dr. Hossein Hajimirsadeghi
       #   - Previously supervised by: Dr. Amir Abdi
-    - title: Graduate Researcher
-      institution: Mila
-      year: 2020 - Present
-      description:
-      # items:
     - title: Research Intern
       institution: University of Oxford
       year: 2019
