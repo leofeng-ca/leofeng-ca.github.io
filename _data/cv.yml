@@ -13,7 +13,7 @@
   contents:
     - title: Ph.D. in Computer Science
       institution: Mila -- Université de Montréal
-      year: 2020 - 2025
+      # year: 2020 - 2025
       # description:
       #   - Supervised by Prof. Yoshua Bengio
     - title: B.A. in Computer Science
@@ -27,30 +27,33 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Senior Machine Learning Researcher
+      institution: RBC Borealis
+      year: May 2026 - Present
     - title: Machine Learning Researcher
-      institution: Borealis AI
-      year: 22025 - Present
+      institution: RBC Borealis
+      year: Jan 2025 - May 2026
       description:
     - title: Research Intern
       institution: RBC Borealis (formerly Borealis AI)
-      year: 2022 - 2024
+      year: Jan 2022 - Dec 2024
       description:
       # items:
       #   - Supervised by Dr. Mohamed Osama Ahmed, Dr. Frederick Tung, and Dr. Hossein Hajimirsadeghi
       #   - Previously supervised by: Dr. Amir Abdi
     - title: Research Intern
       institution: University of Oxford
-      year: 2019
+      year: Jun 2019 - Oct 2019
       # description:
       #   - Supervised by Dr. Luisa Zintgraf
     - title: Research Intern
       institution: University of Kyoto
-      year: 2018-2019
+      year: Dec 2018 - Jan 2019
       # description:
       #   - Supervised by Prof. Atsuko Sehara-Fujisawa
     - title: Research Intern
       institution: Brave Software
-      year: 2018
+      year: Jun 2018 - Sep 2018
       # description:
       #   - Supervised by Panagiotis Tigas
 
