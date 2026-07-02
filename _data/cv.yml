@@ -29,6 +29,13 @@
       institution: Brave Software
       year: Jun 2018 - Sep 2018
 
+- title: Talks
+  type: time_table
+  contents:
+    - title: "Designing Scalable and Efficient Neural Networks"
+      institution: DLRL Summer School
+      year: 2025
+
 - title: Selected Honors and Awards
   type: time_table
   contents:
