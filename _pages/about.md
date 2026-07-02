@@ -2,7 +2,7 @@
 layout: about
 title: "About me"
 permalink: /
-subtitle: 
+subtitle: Senior ML Researcher @ RBC Borealis
 
 profile:
   align: right

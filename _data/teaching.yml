@@ -1,0 +1,18 @@
+- title: Mila -- Université de Montréal
+  type: time_table
+  contents:
+    - title: Representation Learning (IFT6135)
+      year: Fall 2021
+    - title: Fundamentals of Machine Learning (IFT6390)
+      year: Fall 2021
+    - title: Fondements de l’Apprentissage Machine (IFT3395)
+      year: Fall 2021
+    - title: IVADO/Mila Deep Learning School
+      year: Summer 2021
+- title: University of Oxford
+  type: time_table
+  contents:
+    - title: Design and Analysis of Algorithms
+      year: Hilary Term 2020
+    - title: Concurrent Programming
+      year: Hilary Term 2020
