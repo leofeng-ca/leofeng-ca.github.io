@@ -30,14 +30,6 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-themes
 highlight_theme_dark: native    # https://github.com/jwarby/jekyll-pygments-themes
 
-# repo color theme
-repo_theme_light: default       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_trophies:
-  enabled: true
-  theme_light: flat    # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed  # https://github.com/ryo-ma/github-profile-trophy
-
 # -----------------------------------------------------------------------------
 # RSS Feed
 # -----------------------------------------------------------------------------
@@ -117,74 +109,6 @@ google_site_verification:  # your google-site-verification ID (Google Search Con
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
-# Blog
-# -----------------------------------------------------------------------------
-
-blog_name: al-folio # blog_name will be displayed in your blog page
-# blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple whitespace theme for academics
-permalink: /blog/:year/:title/
-
-# Pagination
-pagination:
-  enabled: true
-
-related_blog_posts:
-  enabled: true
-  max_related: 5
-
-# Giscus comments (RECOMMENDED)
-# Follow instructions on https://giscus.app/ to setup for your repo to fill out
-# the information below.
-giscus:
-  repo: alshedivat/al-folio      # <your-github-user-name>/<your-github-repo-name>
-  repo_id: MDEwOlJlcG9zaXRvcnk2MDAyNDM2NQ==
-  category: Comments             # name of the category under which discussions will be created
-  category_id: DIC_kwDOA5PmLc4CTBt6
-  mapping: title                 # identify discussions by post title
-  strict: 1                      # use strict identification mode
-  reactions_enabled: 1           # enable (1) or disable (0) emoji reactions
-  input_position: bottom         # whether to display input form below (bottom) or above (top) the comments
-  theme: preferred_color_scheme  # name of the color scheme (preferred works well with al-folio light/dark mode)
-  emit_metadata: 0
-  lang: en
-
-# Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
-# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-
-# External sources.
-# If you have blog posts published on medium.com or other external sources,
-# you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-
-# -----------------------------------------------------------------------------
-# Collections
-# -----------------------------------------------------------------------------
-
-collections:
-  news:
-    defaults:
-      layout: post
-    output: true
-    permalink: /news/:path/
-  projects:
-    output: true
-    permalink: /projects/:path/
-
-announcements:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
-
-# -----------------------------------------------------------------------------
 # Jekyll settings
 # -----------------------------------------------------------------------------
 
@@ -215,19 +139,13 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-archives
-  - jekyll-diagrams
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-imagemagick
   - jekyll-link-attributes
   - jekyll-minifier
-  - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-sitemap
-  - jekyll-toc
-  - jekyll-twitter-plugin
-  - jemoji
 
 # Sitemap settings
 defaults:
@@ -244,23 +162,6 @@ jekyll-minifier:
   exclude: ['robots.txt']
   uglifier_args:
     harmony: true
-
-# -----------------------------------------------------------------------------
-# Jekyll Archives
-# -----------------------------------------------------------------------------
-
-jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-  layouts:
-    year: archive-year
-    tag: archive-tag
-    category: archive-category
-  permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
-
-display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -336,15 +237,6 @@ imagemagick:
     webp: "-resize 800x"
 
 # -----------------------------------------------------------------------------
-# Jekyll Diagrams
-# -----------------------------------------------------------------------------
-
-jekyll-diagrams:
-    # configuration, see https://github.com/zhustec/jekyll-diagrams.
-    # feel free to comment out this section if not using jekyll diagrams.
-
-
-# -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
 
@@ -352,15 +244,12 @@ enable_google_analytics:    false  # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification
-enable_masonry:             true   # enables automatic project cards arrangement
 enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
 enable_darkmode:            true   # enables switching between light/dark modes
 enable_navbar_social:       true  # enables displaying social links in the
                                    # navbar on the about page
-enable_project_categories:  true   # enables categorization of projects into
-                                   # multiple categories
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
 enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
 
@@ -386,9 +275,6 @@ jquery:
   integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 mathjax:
   version: "3.2.0"
-masonry:
-  version: "4.2.2"
-  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
 mdb:
   version: "4.20.0"
   integrity:
