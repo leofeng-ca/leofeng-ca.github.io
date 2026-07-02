@@ -114,19 +114,40 @@ blockquote {
 
 // Profile
 
-.profile {
-  width: 100%;
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1.5rem;
+  font-size: 0.9rem;
 
-  .address {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
+  li {
+    display: flex;
+    align-items: center;
+    margin-right: 1.25rem;
+    margin-bottom: 0.4rem;
 
-    p {
-      display: inline-block;
-      margin: 0;
+    i {
+      margin-right: 0.4rem;
+      text-align: center;
+      color: var(--global-theme-color);
+    }
+
+    a {
+      color: var(--global-text-color);
+      transition-property: color;
+      transition-duration: 0.2s;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
     }
   }
+}
+
+.profile {
+  width: 100%;
 }
 
 .profile.float-right {
@@ -140,12 +161,6 @@ blockquote {
 @media (min-width: 576px) {
   .profile {
     width: 30%;
-
-    .address {
-      p {
-        display: block;
-      }
-    }
   }
 }
 
@@ -243,6 +258,26 @@ blockquote {
         i::before {
           color: var(--global-theme-color);
         }
+      }
+    }
+  }
+
+  .navbar-brand.cv-icon {
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    border-left: 1px solid var(--global-divider-color);
+
+    i::before {
+      color: var(--global-text-color);
+      transition-property: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      i::before {
+        color: var(--global-theme-color);
       }
     }
   }
