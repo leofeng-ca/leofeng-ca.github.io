@@ -8,9 +8,12 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Machine Learning Research Team Lead
+      institution: RBC Borealis
+      year: Oct 2026 - Present
     - title: Senior Machine Learning Researcher
       institution: RBC Borealis
-      year: May 2026 - Present
+      year: May 2026 - Oct 2026
     - title: Machine Learning Researcher
       institution: RBC Borealis
       year: Jan 2025 - May 2026
@@ -48,14 +51,12 @@
       items: 
         - Molecule Discovery Fellowship ($12,500)
         - UdeM FAS AI Scholarship ($6,500) 
-    - year: 2019
-      items: 
-        - Bronze Medal, North Western European Regionals ACM ICPC, Netherlands
     - year: 2018
       items: 
-        - Bronze Medal, North Western European Regionals ACM ICPC, UK
+        - Bronze Medal, North Western European Regionals ACM ICPC, Netherlands
     - year: 2017
       items: 
+        - Bronze Medal, North Western European Regionals ACM ICPC, UK
         - Bronze Medal, 29th International Olympiad of Informatics (IOI), Iran
         - Gold Medal, Canadian Computing Olympiad
     - year: 2015
