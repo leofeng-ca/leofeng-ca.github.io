@@ -37,6 +37,17 @@
       institution: DLRL Summer School
       year: 2025
 
+- title: Reviewing
+  type: time_table
+  contents:
+    - title: Journals
+      items:
+        - Nature (2026)
+        - IEEE Transactions on Neural Networks and Learning Systems (2025)
+    - title: Conferences
+      items:
+        - NeurIPS, ICML, ICLR, AAAI (Social Impact Track)
+
 - title: Selected Honors and Awards
   type: time_table
   contents:
