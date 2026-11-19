@@ -1,0 +1,10 @@
+<div class="news">
+  <table class="table table-sm table-borderless">
+    {%- for item in site.data.news limit: page.news_limit %}
+    <tr>
+      <th scope="row">{{ item.date }}</th>
+      <td>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</td>
+    </tr>
+    {%- endfor %}
+  </table>
+</div>
